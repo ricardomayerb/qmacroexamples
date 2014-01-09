@@ -1,6 +1,6 @@
 name: "qmacroexamples"
 description: "quantitative macro models mostly in python"
-url: localhost:4000
+baseurl: "http://ricardomayerb.github.io/qmacroexamples"
 paginate: 10
 source: _source
 markdown: rdiscount
