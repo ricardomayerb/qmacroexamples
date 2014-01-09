@@ -1,0 +1,7 @@
+name: "qmacroexamples"
+description: "quantitative macro models mostly in python"
+baseurl: "http://ricardomayerb.github.io/qmacroexamples"
+paginate: 10
+lsi: false
+permalink: pretty
+pygments: true
