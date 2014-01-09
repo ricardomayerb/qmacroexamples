@@ -1,0 +1,8 @@
+name: "qmacroexamples"
+description: "quantitative macro models mostly in python"
+url: localhost:4000
+paginate: 10
+source: _source
+markdown: rdiscount
+permalink: pretty
+pygments: true
