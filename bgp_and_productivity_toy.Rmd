@@ -1,0 +1,11 @@
+Balanced Growth Path and productivity process
+========================================================
+
+Along a deterministic BGP consumption, output, capital and investment
+growth at the same constant rate equal to $(1+\mu_a)$ . This justifies
+defining stationary modifications of those variable as follows:
+
+$$C_t := \frac{\tilde{C}_t}{A_{t-1}  }, \quad  K_t := \frac{\tilde{K}_t}{A_{t-1} }, \quad  I_t := \frac{\tilde{I}_t}{A_{t-1} }, \quad L_t := \tilde{L}_t$$
+
+At times we will refer to these scaled variables as the stationary variables.
+

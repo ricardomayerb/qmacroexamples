@@ -76,3 +76,4 @@ This choice of matrices $C_z, G_s$ implies that all shocks are
 orthogonal to each other.
 
 $$\begin{bmatrix} \mu_a & \zeta_{a,0}\end{bmatrix}' =: z_0 \sim N(\check{z}_0, \Sigma_0), \quad \text{ with sufficient statistics } \{\check{z}_0, \Sigma_0\}$$
+
