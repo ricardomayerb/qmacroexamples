@@ -16,14 +16,12 @@ In a deterministic BGP , neutral productivity grows at a constant gross
 rate of $(1+\mu_a)$. The fraction of hours devoted to work is
 obviously bounded, so in a BGP it must be constant.
 
-Suppose that in a BGP the fraction of total output
-devoted to consumption is constant. Call $r_y$ the net growth rate and
+Call $r_y$ the net growth rate and
 call $R_y := (1+r_y)$ to the gross growth rate of consumption and
-output.
-
-The resource constraint (when binding) implies that investment, too,
+output. *Suppose, now, that in a BGP the fraction of total output
+devoted to consumption is constant*. The resource constraint (when binding) implies that investment, too,
 will grow at rate $R_y$ in a BGP :
-$$C_t + I_t = Y_t \quad \Rightarrow \quad  I_{t+1} = Y_{t+1} - C_{t+1} = R_y Y_{t} - R_y C_{t} = R_y (Y_{t} -  C_{t}) = R_y I_{t}$$
+$$C_t + I_t = Y_t \quad \Rightarrow \quad  I_{t+1} = Y_{t+1} - C_{t+1} = R_y Y_{t} - R_y C_{t} = R_y (Y_{t} -  C_{t}) = R_y I_{t} = R_i I_{t} \Rightarrow R_i = R_y$$
 
 Call $R_k$ the gross growth rate of capital in a BGP. Since investment
 will grow at rate $R_y$,
