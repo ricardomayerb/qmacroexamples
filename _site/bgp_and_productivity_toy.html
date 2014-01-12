@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<!-- saved from url=(0014)about:internet -->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=9" >
+
+<title>Balanced Growth Path and productivity process</title>
+
+<style type="text/css">
+body, td {
+   font-family: sans-serif;
+   background-color: white;
+   font-size: 12px;
+   margin: 8px;
+}
+
+tt, code, pre {
+   font-family: 'DejaVu Sans Mono', 'Droid Sans Mono', 'Lucida Console', Consolas, Monaco, monospace;
+}
+
+h1 { 
+   font-size:2.2em; 
+}
+
+h2 { 
+   font-size:1.8em; 
+}
+
+h3 { 
+   font-size:1.4em; 
+}
+
+h4 { 
+   font-size:1.0em; 
+}
+
+h5 { 
+   font-size:0.9em; 
+}
+
+h6 { 
+   font-size:0.8em; 
+}
+
+a:visited {
+   color: rgb(50%, 0%, 50%);
+}
+
+pre {	
+   margin-top: 0;
+   max-width: 95%;
+   border: 1px solid #ccc;
+   white-space: pre-wrap;
+}
+
+pre code {
+   display: block; padding: 0.5em;
+}
+
+code.r, code.cpp {
+   background-color: #F8F8F8;
+}
+
+table, td, th {
+  border: none;
+}
+
+blockquote {
+   color:#666666;
+   margin:0;
+   padding-left: 1em;
+   border-left: 0.5em #EEE solid;
+}
+
+hr {
+   height: 0px;
+   border-bottom: none;
+   border-top-width: thin;
+   border-top-style: dotted;
+   border-top-color: #999999;
+}
+
+@media print {
+   * { 
+      background: transparent !important; 
+      color: black !important; 
+      filter:none !important; 
+      -ms-filter: none !important; 
+   }
+
+   body { 
+      font-size:12pt; 
+      max-width:100%; 
+   }
+       
+   a, a:visited { 
+      text-decoration: underline; 
+   }
+
+   hr { 
+      visibility: hidden;
+      page-break-before: always;
+   }
+
+   pre, blockquote { 
+      padding-right: 1em; 
+      page-break-inside: avoid; 
+   }
+
+   tr, img { 
+      page-break-inside: avoid; 
+   }
+
+   img { 
+      max-width: 100% !important; 
+   }
+
+   @page :left { 
+      margin: 15mm 20mm 15mm 10mm; 
+   }
+     
+   @page :right { 
+      margin: 15mm 10mm 15mm 20mm; 
+   }
+
+   p, h2, h3 { 
+      orphans: 3; widows: 3; 
+   }
+
+   h2, h3 { 
+      page-break-after: avoid; 
+   }
+}
+
+</style>
+
+
+
+<!-- MathJax scripts -->
+<script type="text/javascript" src="https://c328740.ssl.cf1.rackcdn.com/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+
+</head>
+
+<body>
+<h1>Balanced Growth Path and productivity process</h1>
+
+<p>Along a deterministic Balanced Growth Path, consumption, output, capital and investment growth at the same, and constant, rate than productivity, which we denote  \( \mu_a \) . This justifies
+defining stationary modifications of those variable as follows:</p>
+
+<p>\[ C_t := \frac{\tilde{C}_t}{A_{t-1}  }, \quad  K_t := \frac{\tilde{K}_t}{A_{t-1} }, \quad  I_t := \frac{\tilde{I}_t}{A_{t-1} }, \quad L_t := \tilde{L}_t \]</p>
+
+<p>At times we will refer to these scaled variables as the stationary variables.</p>
+
+<h2>BGP rates </h2>
+
+<p>Summary:</p>
+
+<ul>
+<li>long run (net) growth must be zero for labor since is greater than zero and it&#39;s bounded</li>
+<li>assume consumption-to-output is constant, that is they grow at the same rate</li>
+<li>resource constraint implies that investment also growth to this common rate</li>
+<li>capital accumulation equation implies capital also growth to this common rate</li>
+<li>we can find this common rate (of output, consumption, investment and capital), in terms of the productivity growth,  using the equation for output.</li>
+</ul>
+
+<p>In a deterministic BGP , neutral productivity grows at a constant gross
+rate of \( (1+\mu_a) \). The fraction of hours devoted to work is
+obviously bounded, so in a BGP it must be constant.</p>
+
+<p>Call \( r_y \) the net growth rate and
+call \( R_y := (1+r_y) \) to the gross growth rate of consumption and
+output. <em>Suppose, now, that in a BGP the fraction of total output
+devoted to consumption is constant</em>. The resource constraint (when binding) implies that investment, too,
+will grow at rate \( R_y \) in a BGP :
+\[ C_t + I_t = Y_t \quad \Rightarrow \quad  I_{t+1} = Y_{t+1} - C_{t+1} = R_y Y_{t} - R_y C_{t} = R_y (Y_{t} -  C_{t}) = R_y I_{t} = R_i I_{t} \Rightarrow R_i = R_y \]</p>
+
+<p>Call \( R_k \) the gross growth rate of capital in a BGP. Since investment
+will grow at rate \( R_y \),
+the law of motion of capital implies that
+\( R_k =  R_y \)
+\[ K_{t+1} =  R_y  ~ K_t \]</p>
+
+<p>\[ K_{t+1} = (1-\delta) K_{t} +    I_t \]
+\[ \Rightarrow  K_{t+2} = (1-\delta) K_{t+1} +    I_{t+1} \]
+\[ K_{t+1} R_k = (1-\delta)K_{t} R_k  +   I_{t} R_I  \]
+\[ K_{t+1}  = (1-\delta)K_{t}   +    I_{t} R_I  \frac{1}{R_k} \]
+\[ \Rightarrow   \frac{R_I }{R_k} = 1 \]
+\[ \Rightarrow R_k = R_I   \]
+\[ \Rightarrow R_k = R_y   \]</p>
+
+<p>Now that the growth rate of capital along the BGP (\( R_k \)) is written in
+terms of that of product (\( R_y \)) and since \( R_L = 1 \), we could solve
+\( R_y \) in terms of the growth rate of productivity. Then, along the deterministic BGP:
+\[ Y_t = A_{t}^{1-\alpha} K_t^{\alpha} L_t^{1-\alpha} \]
+\[ Y_{t+1} = A_{t+1}^{1-\alpha} K_{t+1}^{\alpha} L_{t+1}^{1-\alpha} \]
+\[ Y_{t} R_y = (1+\mu_a)^{1-\alpha} A_{t}^{1-\alpha} R_{k}^{\alpha} K_{t}^{\alpha} L_{t}^{1-\alpha} \]
+\[ Y_{t} R_y = (1+\mu_a)^{1-\alpha} R_{k}^{\alpha} A_{t}^{1-\alpha}  K_{t}^{\alpha} L_{t}^{1-\alpha} \]
+\[ Y_{t} R_y = (1+\mu_a)^{1-\alpha} R_{k}^{\alpha} Y_t \ \]
+\[ R_y = (1+\mu_a)^{1-\alpha} R_{k}^{\alpha}  \ \]
+\[ R_y = (1+\mu_a)^{1-\alpha} R_{y}^{\alpha}  \ \]
+\[ R_y^{1-\alpha}  = (1+\mu_a)^{1-\alpha} \]
+\[ R_y  = (1+\mu_a)  \]</p>
+
+<p>In conclusion, in a deterministic BGP, consumption, output, capital and investment grow at the same rate of TFP, while labor does not grow.</p>
+
+</body>
+
+</html>
+

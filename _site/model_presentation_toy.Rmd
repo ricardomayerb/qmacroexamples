@@ -1,8 +1,7 @@
 Toy model presentation
 ========================================================
 
-Simple RBC model with log preferences and non-stationary TFP
-============================================================
+
 
 With this model I seek to illustrate the mechanisms at work in larger
 models featured later in this paper. The simple model features one
@@ -77,3 +76,4 @@ This choice of matrices $C_z, G_s$ implies that all shocks are
 orthogonal to each other.
 
 $$\begin{bmatrix} \mu_a & \zeta_{a,0}\end{bmatrix}' =: z_0 \sim N(\check{z}_0, \Sigma_0), \quad \text{ with sufficient statistics } \{\check{z}_0, \Sigma_0\}$$
+
