@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<!-- saved from url=(0014)about:internet -->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=9" >
+
+<title>Toy model presentation</title>
+
+<style type="text/css">
+body, td {
+   font-family: sans-serif;
+   background-color: white;
+   font-size: 12px;
+   margin: 8px;
+}
+
+tt, code, pre {
+   font-family: 'DejaVu Sans Mono', 'Droid Sans Mono', 'Lucida Console', Consolas, Monaco, monospace;
+}
+
+h1 { 
+   font-size:2.2em; 
+}
+
+h2 { 
+   font-size:1.8em; 
+}
+
+h3 { 
+   font-size:1.4em; 
+}
+
+h4 { 
+   font-size:1.0em; 
+}
+
+h5 { 
+   font-size:0.9em; 
+}
+
+h6 { 
+   font-size:0.8em; 
+}
+
+a:visited {
+   color: rgb(50%, 0%, 50%);
+}
+
+pre {	
+   margin-top: 0;
+   max-width: 95%;
+   border: 1px solid #ccc;
+   white-space: pre-wrap;
+}
+
+pre code {
+   display: block; padding: 0.5em;
+}
+
+code.r, code.cpp {
+   background-color: #F8F8F8;
+}
+
+table, td, th {
+  border: none;
+}
+
+blockquote {
+   color:#666666;
+   margin:0;
+   padding-left: 1em;
+   border-left: 0.5em #EEE solid;
+}
+
+hr {
+   height: 0px;
+   border-bottom: none;
+   border-top-width: thin;
+   border-top-style: dotted;
+   border-top-color: #999999;
+}
+
+@media print {
+   * { 
+      background: transparent !important; 
+      color: black !important; 
+      filter:none !important; 
+      -ms-filter: none !important; 
+   }
+
+   body { 
+      font-size:12pt; 
+      max-width:100%; 
+   }
+       
+   a, a:visited { 
+      text-decoration: underline; 
+   }
+
+   hr { 
+      visibility: hidden;
+      page-break-before: always;
+   }
+
+   pre, blockquote { 
+      padding-right: 1em; 
+      page-break-inside: avoid; 
+   }
+
+   tr, img { 
+      page-break-inside: avoid; 
+   }
+
+   img { 
+      max-width: 100% !important; 
+   }
+
+   @page :left { 
+      margin: 15mm 20mm 15mm 10mm; 
+   }
+     
+   @page :right { 
+      margin: 15mm 10mm 15mm 20mm; 
+   }
+
+   p, h2, h3 { 
+      orphans: 3; widows: 3; 
+   }
+
+   h2, h3 { 
+      page-break-after: avoid; 
+   }
+}
+
+</style>
+
+
+
+<!-- MathJax scripts -->
+<script type="text/javascript" src="https://c328740.ssl.cf1.rackcdn.com/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+
+</head>
+
+<body>
+<h1>Toy model presentation</h1>
+
+<h1>Simple RBC model with log preferences and non-stationary TFP</h1>
+
+<p>With this model I seek to illustrate the mechanisms at work in larger
+models featured later in this paper. The simple model features one
+sector, TFP only (or labor productivity) and log-utility both in
+consumption (unitary risk aversion) and labor.</p>
+
+<h2>Preferences</h2>
+
+<p>\[ \label{eq:toy_preferences}
+E_0 \sum_{t=0}^{\infty}  \beta^t
+[ \nu \ln \tilde{C}_t + (1-\nu) \ln (1- \tilde{L}_t)] \]</p>
+
+<p>The following, transformed, variables are stationary:</p>
+
+<p>\[ \label{eq:toy_stationary_variables}
+C_t := \frac{\tilde{C}_t}{A_{t-1} }, \quad  K_t := \frac{\tilde{K}_t}{A_{t-1} }, \quad  I_t := \frac{\tilde{I}_t}{A_{t-1} }, \quad L_t := \tilde{L}_t \]</p>
+
+<p>In terms of stationary consumption and labor:
+\[ E_0 \sum_{t=0}^{\infty}  \beta^t
+[ \nu \ln (A_{t-1}  ) + \nu \ln C_t + (1-\nu) \ln (1-  L_t)] \]
+\[ E_0 \sum_{t=0}^{\infty}  \beta^t
+[ \nu \ln C_t + (1-\nu) \ln (1-  L_t)] \, + \, \nu E_0 \sum_{t=0}^{\infty}  \beta^t  \ln (A_{t-1}  ) \]</p>
+
+<p>Assuming the last term is finite, and this puts a bound on the growth of
+TFP vis-a-vis the discount factor, then finding the optimal plans of
+consumption and labor (i.e. \( \tilde{C} \) and \( \tilde{L} \)) that maximize ,
+itâs equivalent to finding optimal plans of TFP-scaled consumption and
+labor (\( C \) and \( L \)) that maximize</p>
+
+<p>\[ \label{eq:toy_preferences_stationary}
+ E_0 \sum_{t=0}^{\infty}  \beta^t
+[ \nu \ln C_t + (1-\nu) \ln (1-  L_t)] \]</p>
+
+<h2>Technology</h2>
+
+<p>\[ \label{eq:Fisher_prod_tilde}
+\tilde{Y}_{t} = A_t^{1-\alpha}  \tilde{K}^{\alpha}_{t} L^{1-\alpha}_{t} \]</p>
+
+<p>\[ \label{eq:toy_CIYtilde}
+\tilde{C}_t + \tilde{I}_t \leq \tilde{Y}_{t} \]</p>
+
+<p>\[ \label{eq:toy_Kevol_tilde}
+\tilde{K}_{t+1} =  I_t + (1-\delta) K_{t} \]</p>
+
+<p>implying</p>
+
+<p>\[ \label{eq:toy_CKYtilde}
+\tilde{C}_t + \tilde{K}_{t+1} - (1-\delta)\tilde{K}_{t} \leq A_t^{1-\alpha}  \tilde{K}^{\alpha}_{t} L^{1-\alpha}_{t} \]</p>
+
+<p>\[ \begin{aligned}
+A_{t+1}  =  & A_{t}~ e^{a_{t+1}},  \quad A_0 ~\text{given} \end{aligned} \]</p>
+
+<h3>Signal and states of productivity</h3>
+
+<p>\[ \label{eq:toy_a_contem_state}
+a_{t+1} = \mu_{a} + \zeta_{a,t+1} + \sigma_{a} w_{a,t+1} \]</p>
+
+<p>\[ \begin{aligned}
+\label{eq:toy_z_s_contem_state}
+z_{t+1} & = A_z z_{t} + C_z w_{t+1} \\
+s_{t+1} & = D_s z_{t+1} + G_s w_{t+1}  \end{aligned} \]</p>
+
+<h4>State space matrix notation for productivity</h4>
+
+<p>\[ z_{t} := \begin{bmatrix} \mu_a  \\ \zeta_{a,t}  \end{bmatrix}, \quad  w_{t} := \begin{bmatrix} w_{\zeta_a,t}    \\ w_{a, t}  \end{bmatrix}, \quad A_z := \begin{bmatrix} 1 & 0 \\  0 & \rho_a \end{bmatrix} \]</p>
+
+<p>\[ C_z := \begin{bmatrix}   0 & 0  \\   \sigma_{\zeta_a} & 0  \end{bmatrix} , \quad D_s := \begin{bmatrix} 1 & 1 \end{bmatrix},\quad  G_s := \begin{bmatrix} \sigma_a & 0  \end{bmatrix} \]</p>
+
+<p>This choice of matrices \( C_z, G_s \) implies that all shocks are
+orthogonal to each other.</p>
+
+<p>\[ \begin{bmatrix} \mu_a & \zeta_{a,0}\end{bmatrix}' =: z_0 \sim N(\check{z}_0, \Sigma_0), \quad \text{ with sufficient statistics } \{\check{z}_0, \Sigma_0\} \]</p>
+
+</body>
+
+</html>
+
