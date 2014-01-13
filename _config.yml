@@ -1,7 +1,7 @@
 name: "qmacroexamples"
 description: "quantitative macro models mostly in python"
 baseurl: /qmacroexamples
-paginate: 10
+safe:true
 lsi: false
 permalink: pretty
 pygments: true

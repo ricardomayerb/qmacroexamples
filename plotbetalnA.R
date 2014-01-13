@@ -14,7 +14,7 @@ for(i in 1:length(betas)){
 
 tsseries = as.ts(t(seriesvalue))
 
-plot(tsseries, plot.type="single")
-
+plot(tsseries, plot.type="single", col=c('red', 'blue', 'green'))
+legend(20,80, c("0.98","0.99","0.994"), col=c('red', 'blue', 'green'), lty=1)
 
 
