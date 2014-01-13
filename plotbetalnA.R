@@ -14,7 +14,7 @@ for(i in 1:length(betas)){
 
 tsseries = as.ts(t(seriesvalue))
 
-plot(tsseries, plot.type="single", col=c('red', 'blue', 'green'), ylab=expression(sum(beta^t * ln(A), t==0,N)), xlab="N")
+plot(tsseries, plot.type="single", col=c('red', 'blue', 'green'), ylab=expression(sum(beta^t * ln(A), t==0,N)), xlab="time")
 
 #par(omd = c(.15, .85, .15, .85))
 
