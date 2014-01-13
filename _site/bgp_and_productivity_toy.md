@@ -8,7 +8,19 @@ defining stationary modifications of those variable as follows:
 
 $$C_t := \frac{\tilde{C}_t}{A_{t-1}  }, \quad  K_t := \frac{\tilde{K}_t}{A_{t-1} }, \quad  I_t := \frac{\tilde{I}_t}{A_{t-1} }, \quad L_t := \tilde{L}_t$$
 
-At times we will refer to these scaled variables as the stationary variables.
+At times we will refer to these scaled variables as the stationary variables. Here is a plot illustrating this
+
+<img src="figure/consumptionplot1.png" title="plot of chunk consumptionplot" alt="plot of chunk consumptionplot" style="display: block; margin: auto;" />
+
+```
+## Error: argument "legend" is missing, with no default
+```
+
+<img src="figure/consumptionplot2.png" title="plot of chunk consumptionplot" alt="plot of chunk consumptionplot" style="display: block; margin: auto;" />
+
+
+
+
 
 ## BGP rates 
 
@@ -63,3 +75,10 @@ Keep in mind that, excepting labor, we will be working with scaled variables. Th
 
 ## Subjective discount and growth rate
 As I showed to you in the presentation of the model, we can treat the problem of maximizing the present value of utility as if defined on stationary variables only, but we need to ensure that subjective discounting is high enough to take care of the ever growing nature of consumption. We need that $\sum_{t=0}^{\infty}  \beta^t  \ln (A_{t-1}  )$ is bounded.
+
+Let's try different values of $\beta$ for $\mu_a=0.003$ and plot the cumulative sum in the deterministic case of $A$:
+
+<img src="figure/discountplot.png" title="plot of chunk discountplot" alt="plot of chunk discountplot" style="display: block; margin: auto;" />
+
+
+
