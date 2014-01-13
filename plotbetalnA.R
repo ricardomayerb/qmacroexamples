@@ -1,9 +1,9 @@
+library(ggplot2)
 beta = 0.999
-betas = c(0.98,0.99,0.999)
+betas = c(0.98,0.99,0.995)
 mua = 0.003
-T = 5000
-lnA0 = 0
-vlnA = cumsum(rep(mua,T))
+T = 2000
+vlnA = cumsum(rep(mua,T)) #assumes first ln(A) equal to zero
 
 seriesvalue = vector()
 for(i in 1:length(betas)){
@@ -12,6 +12,9 @@ for(i in 1:length(betas)){
   seriesvalue = rbind(seriesvalue , cumsum(vbeta*vlnA))
 }
 
+tsseries = as.ts(t(seriesvalue))
+
+plot(tsseries, plot.type="single")
 
 
-plot(seriesvalue[3,], type='l')
+
