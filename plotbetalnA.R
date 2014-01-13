@@ -14,7 +14,11 @@ for(i in 1:length(betas)){
 
 tsseries = as.ts(t(seriesvalue))
 
-plot(tsseries, plot.type="single", col=c('red', 'blue', 'green'))
-legend(20,80, c("0.98","0.99","0.994"), col=c('red', 'blue', 'green'), lty=1)
+plot(tsseries, plot.type="single", col=c('red', 'blue', 'green'), ylab=expression(sum(beta^t * ln(A), t==0,N)), xlab="N")
+
+#par(omd = c(.15, .85, .15, .85))
+
+par(cex.lab = 1)
+legend(0,80, c(expression(beta==0.98),expression(beta==0.99),expression(beta==0.994)), col=c('red', 'blue', 'green'), lty=1)
 
 
