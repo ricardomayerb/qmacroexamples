@@ -10,13 +10,7 @@ $$C_t := \frac{\tilde{C}_t}{A_{t-1}  }, \quad  K_t := \frac{\tilde{K}_t}{A_{t-1}
 
 At times we will refer to these scaled variables as the stationary variables. Here is a plot illustrating this
 
-<img src="figure/consumptionplot1.png" title="plot of chunk consumptionplot" alt="plot of chunk consumptionplot" style="display: block; margin: auto;" />
-
-```
-## Error: argument "legend" is missing, with no default
-```
-
-<img src="figure/consumptionplot2.png" title="plot of chunk consumptionplot" alt="plot of chunk consumptionplot" style="display: block; margin: auto;" />
+<img src="figure/consumptionplot1.png" title="plot of chunk consumptionplot" alt="plot of chunk consumptionplot" style="display: block; margin: auto;" /><img src="figure/consumptionplot2.png" title="plot of chunk consumptionplot" alt="plot of chunk consumptionplot" style="display: block; margin: auto;" />
 
 
 

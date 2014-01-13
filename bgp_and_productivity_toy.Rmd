@@ -29,8 +29,6 @@ lnA = cumsum(growth.rate)
 
 plot(lnA+v_consum_sca, type="l", col=c("red"))
 lines(lnA, type="l", col=c("blue"))
-
-
 plot(v_consum_sca, type="l")
 
 ```
