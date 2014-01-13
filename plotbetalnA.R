@@ -15,6 +15,7 @@ for(i in 1:length(betas)){
 tsseries = as.ts(t(seriesvalue))
 
 plot(tsseries, plot.type="single")
+text(100,50,c("beta=0.98","beta=0.99"))
 
 
 
