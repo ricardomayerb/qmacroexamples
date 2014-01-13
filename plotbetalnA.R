@@ -14,16 +14,10 @@ for(i in 1:length(betas)){
 
 tsseries = as.ts(t(seriesvalue))
 
-<<<<<<< HEAD
-plot(tsseries, plot.type="single")
-text(100,50,c("beta=0.98","beta=0.99"))
-=======
-plot(tsseries, plot.type="single", col=c('red', 'blue', 'green'), ylab=expression(sum(beta^t * ln(A), t==0,N)), xlab="N")
->>>>>>> cfb4ae11f0149bdf9b63c96258fb84182b6f9603
+plot(tsseries, plot.type="single", col=c('red', 'blue', 'green'), ylab=expression(sum(beta^t * ln(A), t==0,N)), xlab="time")
 
 #par(omd = c(.15, .85, .15, .85))
 
 par(cex.lab = 1)
 legend(0,80, c(expression(beta==0.98),expression(beta==0.99),expression(beta==0.994)), col=c('red', 'blue', 'green'), lty=1)
-
 
