@@ -1,8 +1,8 @@
 library(ggplot2)
 beta = 0.999
-betas = c(0.98,0.99,0.995)
+betas = c(0.98,0.99,0.994)
 mua = 0.003
-T = 2000
+T = 1500
 vlnA = cumsum(rep(mua,T)) #assumes first ln(A) equal to zero
 
 seriesvalue = vector()
@@ -14,8 +14,16 @@ for(i in 1:length(betas)){
 
 tsseries = as.ts(t(seriesvalue))
 
+<<<<<<< HEAD
 plot(tsseries, plot.type="single")
 text(100,50,c("beta=0.98","beta=0.99"))
+=======
+plot(tsseries, plot.type="single", col=c('red', 'blue', 'green'), ylab=expression(sum(beta^t * ln(A), t==0,N)), xlab="N")
+>>>>>>> cfb4ae11f0149bdf9b63c96258fb84182b6f9603
 
+#par(omd = c(.15, .85, .15, .85))
+
+par(cex.lab = 1)
+legend(0,80, c(expression(beta==0.98),expression(beta==0.99),expression(beta==0.994)), col=c('red', 'blue', 'green'), lty=1)
 
 
