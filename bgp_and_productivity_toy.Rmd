@@ -8,7 +8,33 @@ defining stationary modifications of those variable as follows:
 
 $$C_t := \frac{\tilde{C}_t}{A_{t-1}  }, \quad  K_t := \frac{\tilde{K}_t}{A_{t-1} }, \quad  I_t := \frac{\tilde{I}_t}{A_{t-1} }, \quad L_t := \tilde{L}_t$$
 
-At times we will refer to these scaled variables as the stationary variables.
+At times we will refer to these scaled variables as the stationary variables. Here is a plot illustrating this
+
+```{r consumptionplot, fig.align='center', echo=FALSE}
+N = 200
+growth.rate = rnorm(n=N, mean=0.0015, sd=0.001)
+
+consum_sca_ini  = 0
+consum_sca = consum_sca_ini
+rho_c = 0.85
+
+v_consum_sca = rep(0, N)
+
+for (i in 1:N){
+  consum_sca =  rho_c*consum_sca + 3*growth.rate[i]
+  v_consum_sca[i] =  consum_sca
+}
+
+lnA = cumsum(growth.rate)
+
+plot(lnA+v_consum_sca, type="l", col=c("red"))
+lines(lnA, type="l", col=c("blue"))
+plot(v_consum_sca, type="l")
+
+```
+
+
+
 
 ## BGP rates 
 
@@ -64,5 +90,32 @@ Keep in mind that, excepting labor, we will be working with scaled variables. Th
 ## Subjective discount and growth rate
 As I showed to you in the presentation of the model, we can treat the problem of maximizing the present value of utility as if defined on stationary variables only, but we need to ensure that subjective discounting is high enough to take care of the ever growing nature of consumption. We need that $\sum_{t=0}^{\infty}  \beta^t  \ln (A_{t-1}  )$ is bounded.
 
-Let's try different values of $\beta$ and $\mu_a$ and plot the cumulative sum in the deterministic case of $A$
+Let's try different values of $\beta$ for $\mu_a=0.003$ and plot the cumulative sum in the deterministic case of $A$:
+
+```{r discountplot, fig.align='center', echo=FALSE}
+library(ggplot2)
+beta = 0.999
+betas = c(0.98,0.99,0.994)
+mua = 0.003
+T = 1500
+vlnA = cumsum(rep(mua,T)) #assumes first ln(A) equal to zero
+
+seriesvalue = vector()
+for(i in 1:length(betas)){
+  beta = betas[i]
+  vbeta = cumprod(rep(beta,T))
+  seriesvalue = rbind(seriesvalue , cumsum(vbeta*vlnA))
+}
+
+tsseries = as.ts(t(seriesvalue))
+
+plot(tsseries, plot.type="single", col=c('red', 'blue', 'green'), ylab=expression(sum(beta^t * ln(A), t==0,N)), xlab="N")
+
+#par(omd = c(.15, .85, .15, .85))
+
+par(mgp = c(0, 2, 0), cex.lab=0.9)
+legend(0,80, c(expression(beta==0.98),expression(beta==0.99),expression(beta==0.994)), col=c('red', 'blue', 'green'), lty=1)
+
+```
+
 
