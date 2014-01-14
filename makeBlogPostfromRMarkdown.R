@@ -1,4 +1,4 @@
-myjekyllsite = c("http://YOURBLOGNAME.github.io/")
+myjekyllsite = c("http://ricardomayerb.github.io/qmacroexamples")
 
 KnitPost <- function(input, base.url = myjekyllsite) {
   require(knitr)
