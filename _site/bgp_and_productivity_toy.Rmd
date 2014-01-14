@@ -75,6 +75,10 @@
   
     
       
+    
+  
+    
+      
       	
       	<li><a href="http://ricardomayerb.github.io/qmacroexamples/pages.html">Pages</a></li>
       	
@@ -115,7 +119,10 @@
 
 <div class="row-fluid">
   <div class="span12">
-    Balanced Growth Path and productivity process
+    
+
+
+Balanced Growth Path and productivity process
 ========================================================
 
 ## Scaled versus original variables

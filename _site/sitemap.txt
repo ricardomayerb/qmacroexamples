@@ -4,6 +4,7 @@ http://ricardomayerb.github.io/qmacroexamples/atom.xml
 http://ricardomayerb.github.io/qmacroexamples/bgp_and_productivity_toy.html
 http://ricardomayerb.github.io/qmacroexamples/bgp_and_productivity_toy.Rmd
 http://ricardomayerb.github.io/qmacroexamples/categories.html
+http://ricardomayerb.github.io/qmacroexamples/mmm.html
 http://ricardomayerb.github.io/qmacroexamples/pages.html
 http://ricardomayerb.github.io/qmacroexamples/rss.xml
 http://ricardomayerb.github.io/qmacroexamples/sitemap.txt

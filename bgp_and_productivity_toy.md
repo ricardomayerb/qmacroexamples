@@ -1,9 +1,9 @@
 ---
 layout: page
+author: me
 title: BGP
 ---
 {% include JB/setup %}
-{% include themes/twitter/default.html %}
 
 
 Balanced Growth Path and productivity process
