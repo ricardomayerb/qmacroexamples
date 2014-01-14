@@ -1,6 +1,7 @@
 
 http://ricardomayerb.github.io/qmacroexamples/archive.html
 http://ricardomayerb.github.io/qmacroexamples/atom.xml
+http://ricardomayerb.github.io/qmacroexamples/bgp_and_productivity_toy.html
 http://ricardomayerb.github.io/qmacroexamples/categories.html
 http://ricardomayerb.github.io/qmacroexamples/pages.html
 http://ricardomayerb.github.io/qmacroexamples/rss.xml

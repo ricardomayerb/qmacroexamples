@@ -1,3 +1,8 @@
+---
+layout: default
+title: BGP
+---
+
 Balanced Growth Path and productivity process
 ========================================================
 
