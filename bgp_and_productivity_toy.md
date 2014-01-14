@@ -3,6 +3,9 @@ layout: page
 title: BGP
 ---
 
+{% include JB/setup %}
+
+
 Balanced Growth Path and productivity process
 ========================================================
 
