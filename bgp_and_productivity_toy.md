@@ -3,9 +3,7 @@ layout: page
 title: BGP
 ---
 
-
-
-Balanced Growth Path and productivity process.
+Balanced Growth Path and productivity process
 ========================================================
 
 ## Scaled versus original variables
