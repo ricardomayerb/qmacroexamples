@@ -21,4 +21,3 @@ plot(tsseries, plot.type="single", col=c('red', 'blue', 'green'), ylab=expressio
 par(mgp = c(0, 2, 0), cex.lab=0.9)
 legend(0,80, c(expression(beta==0.98),expression(beta==0.99),expression(beta==0.994)), col=c('red', 'blue', 'green'), lty=1)
 
-

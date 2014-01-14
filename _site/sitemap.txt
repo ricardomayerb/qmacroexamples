@@ -1,0 +1,10 @@
+
+http://ricardomayerb.github.io/qmacroexamples/archive.html
+http://ricardomayerb.github.io/qmacroexamples/atom.xml
+http://ricardomayerb.github.io/qmacroexamples/categories.html
+http://ricardomayerb.github.io/qmacroexamples/pages.html
+http://ricardomayerb.github.io/qmacroexamples/rss.xml
+http://ricardomayerb.github.io/qmacroexamples/sitemap.txt
+http://ricardomayerb.github.io/qmacroexamples/tags.html
+
+http://ricardomayerb.github.io/qmacroexamples/lessons/2011/12/29/jekyll-introduction
