@@ -1,7 +1,6 @@
 ---
-layout: post
-author: me
-title: mytitle
+layout : post
+title : Balanced Growth Path and discounting in toy model 3
 ---
 
 Balanced Growth Path and productivity process
@@ -9,14 +8,13 @@ Balanced Growth Path and productivity process
 
 ## Scaled versus original variables
 
-Along a deterministic Balanced Growth Path, consumption, output, capital and investment growth at the same, and constant, rate than productivity, which we denote  $\mu_a$ . This justifies
-defining stationary modifications of those variable as follows:
+Along a deterministic Balanced Growth Path, consumption, output, capital and investment growth at the same, and constant, rate than productivity, which we denote  $\mu_a$ . This justifies defining stationary modifications of those variable as follows:
 
 $$C_t := \frac{\tilde{C}_t}{A_{t-1}  }, \quad  K_t := \frac{\tilde{K}_t}{A_{t-1} }, \quad  I_t := \frac{\tilde{I}_t}{A_{t-1} }, \quad L_t := \tilde{L}_t$$
 
 At times we will refer to these scaled variables as the stationary variables. Here is a plot illustrating this
 
-<img src="http://ricardomayerb.github.io/qmacroexamplesfigs/bgp_and_productivity_toy_post/consumptionplot1.png" title="center" alt="center" style="display: block; margin: auto;" /><img src="http://ricardomayerb.github.io/qmacroexamplesfigs/bgp_and_productivity_toy_post/consumptionplot2.png" title="center" alt="center" style="display: block; margin: auto;" />
+<img src="figure/consumptionplot1.png" title="plot of chunk consumptionplot" alt="plot of chunk consumptionplot" style="display: block; margin: auto;" /><img src="figure/consumptionplot2.png" title="plot of chunk consumptionplot" alt="plot of chunk consumptionplot" style="display: block; margin: auto;" />
 
 
 
@@ -78,7 +76,7 @@ As I showed to you in the presentation of the model, we can treat the problem of
 
 Let's try different values of $\beta$ for $\mu_a=0.003$ and plot the cumulative sum in the deterministic case of $A$:
 
-<img src="http://ricardomayerb.github.io/qmacroexamplesfigs/bgp_and_productivity_toy_post/discountplot.png" title="center" alt="center" style="display: block; margin: auto;" />
+<img src="figure/discountplot.png" title="plot of chunk discountplot" alt="plot of chunk discountplot" style="display: block; margin: auto;" />
 
 
 
