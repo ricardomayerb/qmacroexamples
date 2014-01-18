@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-myjekyllsite = c("http://YOURBLOGNAME.github.io/")
-=======
-myjekyllsite = c("http://ricardomayerb.github.io/qmacroexamples/")
->>>>>>> 893bb7a709e4eefd21e1058c500afbfa7da6bb40
+myjekyllsite = c("http://ricardomayerb.github.io/learnjk/")
 
 KnitPost <- function(input, base.url = myjekyllsite) {
   require(knitr)
@@ -13,8 +9,5 @@ KnitPost <- function(input, base.url = myjekyllsite) {
   render_jekyll()
   knit(input, envir = parent.frame())
 }
-<<<<<<< HEAD
-=======
 
-KnitPost("bgp-and-discount.Rmd")
->>>>>>> 893bb7a709e4eefd21e1058c500afbfa7da6bb40
+KnitPost("2014-01-17-bgp-new-post3.Rmd")
